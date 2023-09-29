@@ -12,4 +12,4 @@ public class CameraControl : MonoBehaviour
         //Change our position relative to the player position
         transform.position = new Vector3(player.transform.position.x, transform.position.y, transform.position.z);
     }
-}
+} 
