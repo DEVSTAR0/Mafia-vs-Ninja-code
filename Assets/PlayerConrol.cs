@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour
         float movementValueX = Input.GetAxis("Horizontal");
 
         //Change the x velocity of the Rigidbody2D to be equal to the movement value
-        playerObject.velocity = new Vector2 (movementValueX*5, playerObject.velocity.y);
+        playerObject.velocity = new Vector2 (movementValueX * 10, playerObject.velocity.y);
 
         //Check to see if the ground check object is touching the ground
         isOnGround = Physics2D.OverlapCircle(groundChecker.transform.position, 1.0f, whatIsGround);
